@@ -1,5 +1,5 @@
 # Telco-Customer-Churn
-Telecom Customer Churn
+
 Understanding the dataset:
 
 With the rapid development of telecommunication industry, the service providers are inclined more towards expansion of the subscriber base. Telephone service companies, Internet service providers, pay TV companies, insurance firms, and alarm monitoring services, often use customer churn analysis and customer churn rates as one of their key business metrics because the cost of retaining an existing customer is far less than acquiring a new one.
