@@ -8,6 +8,7 @@ Therefore, by collecting knowledge from the telecom industries can help in predi
 Data Overview:
 
 Rows (represents customer) :7043
+
 Columns (represents customer’s attributes) :21
 
 Problem Statement: 
