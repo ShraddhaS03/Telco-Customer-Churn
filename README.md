@@ -15,4 +15,9 @@ Columns (represents customer’s attributes) :21
 Problem Statement: 
 Predict behavior to retain customers i.e we need to analyze all relevant customer data and develop focused customer retention program.
 
+Questions:
+
+1)What are the factors causing customer churn?
+
+2)Who has more churn rate?(males or females)
 
