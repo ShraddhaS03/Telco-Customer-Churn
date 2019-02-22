@@ -21,10 +21,6 @@ library(Hotelling)
 telco_churn <- read.csv("C:\\Users\\sshah\\Desktop\\MVA\\project\\Telco-Customer-Churn.csv")
 class(telco_churn)
 
-# Displaying the contents the data frame.
-telco_churn
-# Displaying the first six rows of the data frame.
-head(telco_churn)
 # Showing the structure of the data frame.
 str(telco_churn)
 #size of dataset - output is first # of rows aka points, then columns aka variables
@@ -39,13 +35,13 @@ summary(telco_churn)
 #Data Cleaning
 #Converting SeniorCitizen variable into a factor variable
 telco_churn$SeniorCitizen <- as.factor(ifelse(telco_churn$SeniorCitizen==0,'Yes','No'))
+head(telco_churn, n=10)
 
 #Converting tenure values into ranges of 12 months
 
 telco_churn <- mutate(telco_churn,tenure_range = tenure)
-cut(telco_churn$tenure_range,6,labels = c('0-1 Years','1-2 Years','2-3 Years','4-5 Years','5-6 Years','6-7 Years'))
-telco_churn$tenure_range <- cut(telco_churn$tenure_range,6,labels = c('0-1 Years','1-2 Years','2-3 Years','4-5 Years','5-6 Years','6-7 Years'))
-
+telco_churn_tenure <- cut(telco_churn$tenure_range,6,labels = c('0-1 Years','1-2 Years','2-3 Years','4-5 Years','5-6 Years','6-7 Years'))
+head(telco_churn_tenure)
 
 #Replacing 'No Internet Service' value in Streaming Movies, Online Security, Device Prtection,
 #Tech Support and Streaming TV with No'
